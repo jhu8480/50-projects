@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(230, 222, 222, 0.2);
+}
+
+.header-wrapper {
+  color: #fff;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(102,102,102);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.burger-btn {
+  background-color: rgb(102, 102, 102);
+  margin-left: 15px;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header-btns {
+  width: 40%;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-btns button {
+  background-color: #5ec576;
+  border: none;
+  width: 60px;
+  padding: 4px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.header-btns button:active {
+  transform: scale(1.1);
+}
+
+.header-btns button a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.hidden-menu {
+  border-top: 3px solid #fff;
+  background-color: rgb(102, 102, 102);
+  color: #fff;
+  width: 10%;
+  height: 20%;
+  min-width: 100px;
+  min-height: 150px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.hidden-menu .menu-item {
+  margin-left: 8%;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-container {
+  margin-top: calc(2% + 50px);
+}
+
+.topics-container {
+  width: 100%;
+  min-height: 160px;
+  padding: 18px;
+}
+
+.topics-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 6px;
+  list-style-type: none;
+}
+
+.topics-container ul li {
+  color: rgb(102, 102, 102);
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 85px;
+  height: 25px;
+  text-align: center;
+  padding-top: 2.8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.topics-container ul li:active {
+  color: #fff;
+  background-color: rgb(102, 102, 102);
+}
+
+.feed-container {
+  padding: 0, 1.6rem;
+  background-color: #fbf9f9;
+}
+
+.feed-top {
+  width: 100%;
+  min-height: 30px;
+  background-color: #cbc5c5;
+}
+
+
+
+
+
