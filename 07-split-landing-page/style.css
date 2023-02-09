@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+  --left-bg-color: rgba(237, 241, 188, 0.4);
+  --right-bg-color: rgba(230, 230, 224, 0.3);
+  --left-btn-hover-color: rgba(42, 42, 39, 0.4);
+  --left-btn-hover-color: rgba(42, 42, 39, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: white;
+  border: 0.1rem solid white;
+  border-radius: 14px;
+  font-size: 1rem;
+  width: 15rem;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgba(30, 30, 30, 0.3);
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover-color);
+}
+.split.right .btn:hover {
+  background-color: var(--left-btn-hover-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+}
+
+.split.left {
+  top: 0;
+  left: 0;
+  background: url('./image/electric-guitar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right {
+  top: 0;
+  left: 50%;
+  background: url('./image/acoustic-guitar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+  left: 75%;
+}
+
+.hover-right .right {
+  width: 75%;
+  left: 25%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
