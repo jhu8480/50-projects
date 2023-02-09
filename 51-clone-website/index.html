@@ -28,10 +28,11 @@
     <div class="menu-item"><i class="fa-solid fa-bookmark"></i> Featured</div>
     <div class="menu-item"><i class="fa-solid fa-magnifying-glass"></i> Search</div>
   </div>
+  <div class="hidden-layer hidden"></div>
 
   <div class="main-container">
     <div class="topics-container">
-      <ul>
+      <ul id="topic-list">
         <li>All</li>
         <li>Trending</li>
         <li>Life</li>
@@ -46,11 +47,23 @@
         <li>Rumors</li>
       </ul>
     </div>
+
+    <div class="feed-container">
+      <div class="feed-top">
+        <button class="feed-burger"><i class="fa-solid fa-list"></i></button>
+        <div class="hidden-feed-menu hidden">
+          <div class="hfm-item"><i class="fa-solid fa-list-check"></i> All</div>
+          <div class="hfm-item"><i class="fa-solid fa-question"></i> Questions</div>
+          <div class="hfm-item"><i class="fa-regular fa-newspaper"></i> Articles</div>
+          <div class="hfm-item"><i class="fa-solid fa-file-video"></i> Videos</div>
+        </div>
+        <div class="switch-bar">
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="feed-container">
-    <div class="feed-top"></div>
-  </div>
+
 
   <script src="./script.js"></script>
 </body>
